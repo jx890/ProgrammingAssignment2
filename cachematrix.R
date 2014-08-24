@@ -6,14 +6,14 @@
 ## a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-  inv <- NULL
+  inv <- NULL ##originally set to null
   set <- function(y) {
     x <<- y
-    inv <<- NULL
+    inv <<- NULL ##re-set to null for new vaue provided
   }
-  get <- function() x
-  setinverse <- function(inverse) inv <<- inverse
-  getinverse <- function() inv 
+  get <- function() x ## returns matrix value
+  setinverse <- function(inverse) inv <<- inverse ##sets inverse of matrix
+  getinverse <- function() inv ## returns the inverse of matrix set before
   list(set = set, get = get,
        setinverse = setinverse,
        getinverse = getinverse)
