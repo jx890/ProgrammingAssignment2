@@ -1,4 +1,4 @@
-Programming Assignment 2: Lexical Scoping -- Examples
+Programming Assignment 2: Lexical Scoping -- Sample Run
 
 > simpleM1 <- matrix(c(3,2,0,0,0,1,2,-2,1),nrow=3, ncol=3)
 > 
